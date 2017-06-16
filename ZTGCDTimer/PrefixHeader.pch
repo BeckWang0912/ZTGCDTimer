@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  ZTGCDTimer
+//
+//  Created by BY-iMac on 17/6/16.
+//  Copyright © 2017年 beck.wang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#define KS_Width   [UIScreen mainScreen].bounds.size.width
+#define KS_Heigth  [UIScreen mainScreen].bounds.size.height
+
+#define BIWeakObj(o)   @autoreleasepool {} __weak typeof(o) o ## Weak = o;
+#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+
+#endif /* PrefixHeader_pch */

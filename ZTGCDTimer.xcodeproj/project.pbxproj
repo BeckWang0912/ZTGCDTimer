@@ -15,6 +15,8 @@
 		3A4B2A1C1EF3CA0500168A77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A4B2A1A1EF3CA0500168A77 /* LaunchScreen.storyboard */; };
 		3A4B2A271EF3CA0500168A77 /* ZTGCDTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4B2A261EF3CA0500168A77 /* ZTGCDTimerTests.m */; };
 		3A4B2A321EF3CA0500168A77 /* ZTGCDTimerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4B2A311EF3CA0500168A77 /* ZTGCDTimerUITests.m */; };
+		3A4B2A481EF3CF3500168A77 /* ZTGCDTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4B2A471EF3CF3500168A77 /* ZTGCDTimerManager.m */; };
+		3A4B2A4B1EF3ED9C00168A77 /* MutiGCDTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4B2A4A1EF3ED9C00168A77 /* MutiGCDTimerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		3A4B2A2D1EF3CA0500168A77 /* ZTGCDTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTGCDTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A4B2A311EF3CA0500168A77 /* ZTGCDTimerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTGCDTimerUITests.m; sourceTree = "<group>"; };
 		3A4B2A331EF3CA0500168A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A4B2A461EF3CF3500168A77 /* ZTGCDTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTGCDTimerManager.h; path = GCDTimer/ZTGCDTimerManager.h; sourceTree = "<group>"; };
+		3A4B2A471EF3CF3500168A77 /* ZTGCDTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTGCDTimerManager.m; path = GCDTimer/ZTGCDTimerManager.m; sourceTree = "<group>"; };
+		3A4B2A491EF3ED9C00168A77 /* MutiGCDTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutiGCDTimerViewController.h; sourceTree = "<group>"; };
+		3A4B2A4A1EF3ED9C00168A77 /* MutiGCDTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutiGCDTimerViewController.m; sourceTree = "<group>"; };
+		3A4B2A4C1EF3EE2700168A77 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +108,13 @@
 		3A4B2A0B1EF3CA0500168A77 /* ZTGCDTimer */ = {
 			isa = PBXGroup;
 			children = (
+				3A4B2A421EF3CE2900168A77 /* GCDTimer */,
 				3A4B2A0F1EF3CA0500168A77 /* AppDelegate.h */,
 				3A4B2A101EF3CA0500168A77 /* AppDelegate.m */,
 				3A4B2A121EF3CA0500168A77 /* ViewController.h */,
 				3A4B2A131EF3CA0500168A77 /* ViewController.m */,
+				3A4B2A491EF3ED9C00168A77 /* MutiGCDTimerViewController.h */,
+				3A4B2A4A1EF3ED9C00168A77 /* MutiGCDTimerViewController.m */,
 				3A4B2A151EF3CA0500168A77 /* Main.storyboard */,
 				3A4B2A181EF3CA0500168A77 /* Assets.xcassets */,
 				3A4B2A1A1EF3CA0500168A77 /* LaunchScreen.storyboard */,
@@ -118,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				3A4B2A0D1EF3CA0500168A77 /* main.m */,
+				3A4B2A4C1EF3EE2700168A77 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +149,15 @@
 				3A4B2A331EF3CA0500168A77 /* Info.plist */,
 			);
 			path = ZTGCDTimerUITests;
+			sourceTree = "<group>";
+		};
+		3A4B2A421EF3CE2900168A77 /* GCDTimer */ = {
+			isa = PBXGroup;
+			children = (
+				3A4B2A461EF3CF3500168A77 /* ZTGCDTimerManager.h */,
+				3A4B2A471EF3CF3500168A77 /* ZTGCDTimerManager.m */,
+			);
+			name = GCDTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A4B2A141EF3CA0500168A77 /* ViewController.m in Sources */,
+				3A4B2A4B1EF3ED9C00168A77 /* MutiGCDTimerViewController.m in Sources */,
 				3A4B2A111EF3CA0500168A77 /* AppDelegate.m in Sources */,
+				3A4B2A481EF3CF3500168A77 /* ZTGCDTimerManager.m in Sources */,
 				3A4B2A0E1EF3CA0500168A77 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +444,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/ZTGCDTimer/PrefixHeader.pch";
 				INFOPLIST_FILE = ZTGCDTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ztwang.ZTGCDTimer;
@@ -433,6 +457,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/ZTGCDTimer/PrefixHeader.pch";
 				INFOPLIST_FILE = ZTGCDTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ztwang.ZTGCDTimer;
