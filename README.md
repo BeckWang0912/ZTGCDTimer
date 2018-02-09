@@ -65,9 +65,9 @@ scheduledTimerWithTimeInterval方法将target设为A对象时，A对象会被这
 
 看到这里，你会不会发现使用NSTimer实现定时器这么麻烦，又是RunLoop，又是线程的，一会儿还得考虑内存泄露，So , 如果在一个页面需要同时显示多个计时器的时候，NSTimer简直就是灾难了。那么有没有高逼格的办法实现呢？答案就是`GCD`!
 
-以下5点是使用dispatch\_source\_t创建timer的主要知识点：
+以下5点是使用dispatch_source_t创建timer的主要知识点：
 
-* **获取全局子线程队列 **
+* **获取全局子线程队列**
 
 ```Objective-C
 dispatch_queue_t queue ＝ dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
