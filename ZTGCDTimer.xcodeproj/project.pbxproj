@@ -17,6 +17,8 @@
 		3A4B2A321EF3CA0500168A77 /* ZTGCDTimerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4B2A311EF3CA0500168A77 /* ZTGCDTimerUITests.m */; };
 		3A4B2A481EF3CF3500168A77 /* ZTGCDTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4B2A471EF3CF3500168A77 /* ZTGCDTimerManager.m */; };
 		3A4B2A4B1EF3ED9C00168A77 /* MutiGCDTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4B2A4A1EF3ED9C00168A77 /* MutiGCDTimerViewController.m */; };
+		3F38C4F1202D836D000A6D54 /* singleTimer.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F38C4EF202D836D000A6D54 /* singleTimer.png */; };
+		3F38C4F2202D836D000A6D54 /* mutiTimer.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F38C4F0202D836D000A6D54 /* mutiTimer.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		3A4B2A491EF3ED9C00168A77 /* MutiGCDTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutiGCDTimerViewController.h; sourceTree = "<group>"; };
 		3A4B2A4A1EF3ED9C00168A77 /* MutiGCDTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutiGCDTimerViewController.m; sourceTree = "<group>"; };
 		3A4B2A4C1EF3EE2700168A77 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3F38C4EF202D836D000A6D54 /* singleTimer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singleTimer.png; sourceTree = "<group>"; };
+		3F38C4F0202D836D000A6D54 /* mutiTimer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mutiTimer.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				3A4B2A131EF3CA0500168A77 /* ViewController.m */,
 				3A4B2A491EF3ED9C00168A77 /* MutiGCDTimerViewController.h */,
 				3A4B2A4A1EF3ED9C00168A77 /* MutiGCDTimerViewController.m */,
+				3F38C4F0202D836D000A6D54 /* mutiTimer.png */,
+				3F38C4EF202D836D000A6D54 /* singleTimer.png */,
 				3A4B2A151EF3CA0500168A77 /* Main.storyboard */,
 				3A4B2A181EF3CA0500168A77 /* Assets.xcassets */,
 				3A4B2A1A1EF3CA0500168A77 /* LaunchScreen.storyboard */,
@@ -266,7 +272,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F38C4F2202D836D000A6D54 /* mutiTimer.png in Resources */,
 				3A4B2A1C1EF3CA0500168A77 /* LaunchScreen.storyboard in Resources */,
+				3F38C4F1202D836D000A6D54 /* singleTimer.png in Resources */,
 				3A4B2A191EF3CA0500168A77 /* Assets.xcassets in Resources */,
 				3A4B2A171EF3CA0500168A77 /* Main.storyboard in Resources */,
 			);
@@ -531,6 +539,7 @@
 				3A4B2A381EF3CA0500168A77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A4B2A391EF3CA0500168A77 /* Build configuration list for PBXNativeTarget "ZTGCDTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +548,7 @@
 				3A4B2A3B1EF3CA0500168A77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A4B2A3C1EF3CA0500168A77 /* Build configuration list for PBXNativeTarget "ZTGCDTimerUITests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +557,7 @@
 				3A4B2A3E1EF3CA0500168A77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

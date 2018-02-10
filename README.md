@@ -124,12 +124,12 @@ dispatch_source_cancel(timer);
 
 单个定时器效果：
 
-![](/assets/DingTalk20180209142845.png)
+![image](https://github.com/BeckWang0912/ZTGCDTimer/blob/master/ZTGCDTimer/singleTimer.png)
 
 写到这里，基本上可以满足开发要求，然而我们可以更加变态，假设这样的场景，每次开始新一次的计时前，需要取消掉上一次的计时任务 或者 将上一次计时的任务，合并到新的一次计时中，最终一并执行！针对这两种场景，也已经集成到上面的接口scheduleGCDTimerWithName中。具体代码请看demo！
 
 多个定时器效果图：
 
-![](/assets/DingTalk20180209142824.png)
+![image](https://github.com/BeckWang0912/ZTGCDTimer/blob/master/ZTGCDTimer/mutiTimer.png)
 
 github地址：[https://github.com/BeckWang0912/ZTGCDTimer](https://github.com/BeckWang0912/ZTGCDTimer) 如果文章对您有帮助的话，请star，谢谢！
